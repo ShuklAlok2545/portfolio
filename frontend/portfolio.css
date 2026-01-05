@@ -779,7 +779,7 @@ a.top2{
   color: rgb(3, 218, 129);
   }
 
-  #blogs.popup{
+  .prj .popup{
     color: black;
     background: skyblue;
   }
@@ -1465,3 +1465,7 @@ a button {
   flex-wrap: wrap;
 }
 
+/* .prj  #blogs2 .popup{
+  color: black;
+  background: skyblue;
+} */
