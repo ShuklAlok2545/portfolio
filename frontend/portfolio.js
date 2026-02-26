@@ -181,7 +181,7 @@ const d = document.getElementById("date")
 d.textContent = new Date().getFullYear();
 
 const age = document.getElementById("age")
-const birthDate = new Date(2000, 7, 15); // Month is 0-based (August = 7)
+const birthDate = new Date(2005, 7, 15); // Month is 0-based (August = 7)
 const today = new Date();
 
 age.textContent = today.getFullYear() - birthDate.getFullYear();
