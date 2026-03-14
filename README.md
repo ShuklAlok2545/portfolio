@@ -2,7 +2,8 @@
 
 A fully responsive personal portfolio website built to showcase my skills, projects, and experience. The application includes a modern frontend and a robust backend to handle dynamic content and data management.
 
-Live: https://shuklalokportfolio.netlify.app/
+## Live Demo
+👉 [View Website](https://your-website.com)
 ---
 
 ## 🚀 Features
