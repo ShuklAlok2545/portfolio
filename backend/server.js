@@ -29,7 +29,7 @@ app.use(cors({
     credentials: true
   }));
 
-  app.options('/api/contact', cors());
+app.options('/api/contact', cors());
 
 app.use(express.json());
 
@@ -38,9 +38,9 @@ connect(MONGODB_URI)
 .catch(err => console.log('MongoDB connection error:', err));
 
 
-app.get('/', (req, res) => {
-    res.send('Server is running');
-  });
+// app.get('/', (req, res) => {
+//     res.send('Server is running');
+//   });
 
 
 app.post('/api/contact', async (req, res) => {
@@ -71,7 +71,6 @@ app.get('/api/likes', async (req, res) => {
     res.status(500).json({ error: 'Failed to fetch like count' });
   }
 });
-
 
 app.post('/api/like', async (req, res) => {
   try {

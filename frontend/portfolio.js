@@ -24,7 +24,6 @@ if(hidden==true){
     fun();
   }
   });
-
 };
 
 //X setup
@@ -44,8 +43,6 @@ inmenu.addEventListener("click" , ()=>{
     form.addEventListener("submit", async function (e) {
       e.preventDefault();
 
-
-
       const name = form.name.value.trim();
       const mail = form.mail.value.trim();
       const contact = form.contact.value.trim();
@@ -58,7 +55,7 @@ inmenu.addEventListener("click" , ()=>{
       }
 
       //Name validation: at least 2 characters, only letters and spaces
-      const nameRegex = /^[A-Za-z\s]{2,}$/;
+      const nameRegex = /^[A-Za-z\s]{2,30}$/;
       if (!nameRegex.test(name)) {
         alert("🧑 Name must be at least 2 characters and contain only letters and spaces.");
         return;
@@ -181,7 +178,7 @@ const d = document.getElementById("date")
 d.textContent = new Date().getFullYear();
 
 const age = document.getElementById("age")
-const birthDate = new Date(2005, 7, 15); // Month is 0-based (August = 7)
+const birthDate = new Date(2005, 7, 15);
 const today = new Date();
 
 age.textContent = today.getFullYear() - birthDate.getFullYear();
